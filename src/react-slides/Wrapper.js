@@ -1,5 +1,7 @@
 import styled from "@emotion/styled";
 
+// https://stackoverflow.com/questions/1719452/how-to-make-a-div-always-full-screen/23951500
+
 const Wrapper = styled.div`
   /* Height and width fallback for older browsers. */
   height: 100%;
