@@ -2,11 +2,11 @@
 
 ## Introduction
 
-react-slides are a bunch of React components that enable you to create a presentation deck of your own React components. Each of you components gets its own slide.
+react-slides enables you to create a presentation deck of your own React components. Each of your components get their own slide.
 
 ## Example
 
-What you do is create an array of all your components and pass that array as childr of the react-slides' Slides component:
+What you do is create an array of all your components and pass that array as child of the react-slides' Slides component:
 
 ```js
 import React from "react";
