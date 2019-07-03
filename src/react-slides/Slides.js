@@ -1,10 +1,12 @@
 import React from "react";
+import PropTypes from "prop-types";
 import createPersistedState from "use-persisted-state";
 
 import Wrapper from "./Wrapper";
 
-function Slides({ children: slides }) {
-  const useCurrentSlideIndexState = createPersistedState("currentSlideIndex");
+function Slides({ appId = "myApp", children: slides }) {
+  const CURRENTSLIDEINDEX = appId + "-currentSlideIndex";
+  const useCurrentSlideIndexState = createPersistedState(CURRENTSLIDEINDEX);
   const [currentSlideIndex, setCurrentSlideIndex] = useCurrentSlideIndexState(0);
 
   function goToPrev() {
@@ -37,5 +39,16 @@ function Slides({ children: slides }) {
     </Wrapper>
   );
 }
+
+Slides.propTypes = {
+  appId: function(props, propName, componentName) {
+    if (!/^[a-zA-z]{1,12}$/.test(props[propName])) {
+      return new Error(
+        "If you provide the optional appId prop, please use letters only, max 12 characters."
+      );
+    }
+  },
+  children: PropTypes.array.isRequired
+};
 
 export default Slides;
