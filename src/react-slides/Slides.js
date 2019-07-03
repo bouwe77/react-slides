@@ -1,42 +1,21 @@
 import React from "react";
 import PropTypes from "prop-types";
-import createPersistedState from "use-persisted-state";
 
 import FullScreen from "./FullScreen";
+import useSlides from "./useSlides";
+import Navigation from "./Navigation";
+
+//TODO useKeys hook: https://github.com/haldarmahesh/use-key-hook
 
 function Slides({ appId, children: slides }) {
-  const CURRENTSLIDEINDEX = appId + "-currentSlideIndex";
-  const useCurrentSlideIndexState = createPersistedState(CURRENTSLIDEINDEX);
-  const [currentSlideIndex, setCurrentSlideIndex] = useCurrentSlideIndexState(0);
-
-  function goToPrev() {
-    if (slides.length > 0 && currentSlideIndex > 0) {
-      setCurrentSlideIndex(currentSlideIndex - 1);
-    }
-  }
-
-  function goToNext() {
-    if (currentSlideIndex < slides.length - 1) {
-      setCurrentSlideIndex(currentSlideIndex + 1);
-    }
-  }
-
-  function Navigation() {
-    return (
-      <div>
-        <button onClick={goToPrev}>prev</button>
-        <button onClick={goToNext}>next</button>
-      </div>
-    );
-  }
-
-  const Slide = slides[currentSlideIndex];
+  const localStorageKey = appId + "-currentSlideIndex";
+  const [CurrentSlide, goToPrev, goToNext] = useSlides(slides, localStorageKey);
 
   return (
     <>
-      <Navigation />
+      <Navigation goToPrev={goToPrev} goToNext={goToNext} />
       <FullScreen>
-        <Slide />
+        <CurrentSlide />
       </FullScreen>
     </>
   );
