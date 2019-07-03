@@ -2,9 +2,9 @@ import React from "react";
 import PropTypes from "prop-types";
 import createPersistedState from "use-persisted-state";
 
-import Wrapper from "./Wrapper";
+import FullScreen from "./FullScreen";
 
-function Slides({ appId = "myApp", children: slides }) {
+function Slides({ appId, children: slides }) {
   const CURRENTSLIDEINDEX = appId + "-currentSlideIndex";
   const useCurrentSlideIndexState = createPersistedState(CURRENTSLIDEINDEX);
   const [currentSlideIndex, setCurrentSlideIndex] = useCurrentSlideIndexState(0);
@@ -33,12 +33,18 @@ function Slides({ appId = "myApp", children: slides }) {
   const Slide = slides[currentSlideIndex];
 
   return (
-    <Wrapper>
+    <>
       <Navigation />
-      <Slide />
-    </Wrapper>
+      <FullScreen>
+        <Slide />
+      </FullScreen>
+    </>
   );
 }
+
+Slides.defaultProps = {
+  appId: "myApp"
+};
 
 Slides.propTypes = {
   appId: function(props, propName, componentName) {

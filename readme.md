@@ -19,3 +19,8 @@ const slides = [Slide1, Slide2];
 const rootElement = document.getElementById("root");
 ReactDOM.render(<Slides>{slides}</Slides>, rootElement);
 ```
+
+## Props
+
+You can pass in an optional `appId` prop to the Slides component in case you have different apps that use react-slide under the same domain and port, but each have their own state. If you don't
+pass the appId the apps will share their state through local storage.
