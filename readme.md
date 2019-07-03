@@ -6,16 +6,16 @@ react-slides are a bunch of React components that enable you to create a present
 
 ## Example
 
+What you do is create an array of all your components and pass that array as childr of the react-slides' Slides component:
+
 ```js
 import React from "react";
 import ReactDOM from "react-dom";
 import Slides from "react-slides";
 
-// Import your components, put them in an array and pass to the Slides component:
-
 import { Slide1, Slide2 } from "./my-components";
 const slides = [Slide1, Slide2];
 
 const rootElement = document.getElementById("root");
-ReactDOM.render(<Slides slides={slides} />, rootElement);
+ReactDOM.render(<Slides>{slides}</Slides>, rootElement);
 ```

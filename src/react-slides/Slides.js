@@ -3,7 +3,7 @@ import createPersistedState from "use-persisted-state";
 
 import Wrapper from "./Wrapper";
 
-function Slides({ slides }) {
+function Slides({ children: slides }) {
   const useCurrentSlideIndexState = createPersistedState("currentSlideIndex");
   const [currentSlideIndex, setCurrentSlideIndex] = useCurrentSlideIndexState(0);
 
