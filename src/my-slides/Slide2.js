@@ -1,6 +1,6 @@
 import React from "react";
 
-import Example from "../code-examples/HelloWorld";
+import Example from "../my-code-examples/HelloWorld";
 
 function Slide2() {
   return (
