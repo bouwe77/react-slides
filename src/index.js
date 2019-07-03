@@ -1,7 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import App from "./app/App";
+import Slides from "./react-slides";
+
+import slides from "./my-presentation/slides";
 
 const rootElement = document.getElementById("root");
-ReactDOM.render(<App />, rootElement);
+ReactDOM.render(<Slides slides={slides} />, rootElement);

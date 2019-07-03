@@ -1,9 +1,9 @@
 import React from "react";
 import createPersistedState from "use-persisted-state";
 
-import slides from "../content/slides";
+import Wrapper from "./Wrapper";
 
-function Slides() {
+function Slides({ slides }) {
   const useCurrentSlideIndexState = createPersistedState("currentSlideIndex");
   const [currentSlideIndex, setCurrentSlideIndex] = useCurrentSlideIndexState(0);
 
@@ -31,10 +31,10 @@ function Slides() {
   const Slide = slides[currentSlideIndex];
 
   return (
-    <>
+    <Wrapper>
       <Navigation />
       <Slide />
-    </>
+    </Wrapper>
   );
 }
 
