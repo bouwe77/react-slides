@@ -4,8 +4,7 @@ import PropTypes from "prop-types";
 import FullScreen from "./FullScreen";
 import useSlides from "./useSlides";
 import Navigation from "./Navigation";
-
-//TODO useKeys hook: https://github.com/haldarmahesh/use-key-hook
+import KeyboardNavigation from "./KeyboardNavigation";
 
 function Slides({ appId, children: slides }) {
   const localStorageKey = appId + "-currentSlideIndex";
@@ -13,6 +12,7 @@ function Slides({ appId, children: slides }) {
 
   return (
     <>
+      <KeyboardNavigation goToPrev={goToPrev} goToNext={goToNext} />
       <Navigation goToPrev={goToPrev} goToNext={goToNext} />
       <FullScreen>
         <CurrentSlide />
