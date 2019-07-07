@@ -3,17 +3,21 @@ import PropTypes from "prop-types";
 
 import FullScreen from "./FullScreen";
 import useSlides from "./useSlides";
-import Navigation from "./Navigation";
+import ButtonNavigation from "./ButtonNavigation";
 import KeyboardNavigation from "./KeyboardNavigation";
 
-function Slides({ appId, children: slides }) {
-  const localStorageKey = appId + "-currentSlideIndex";
+function Slides({ config, children: slides }) {
+  const localStorageKey = config.appId + "-currentSlideIndex";
   const [CurrentSlide, goToPrev, goToNext] = useSlides(slides, localStorageKey);
+
+  console.log(localStorageKey);
 
   return (
     <>
       <KeyboardNavigation goToPrev={goToPrev} goToNext={goToNext} />
-      <Navigation goToPrev={goToPrev} goToNext={goToNext} />
+      {config.showButtonNavigation ? (
+        <ButtonNavigation goToPrev={goToPrev} goToNext={goToNext} />
+      ) : null}
       <FullScreen>
         <CurrentSlide />
       </FullScreen>
@@ -22,17 +26,20 @@ function Slides({ appId, children: slides }) {
 }
 
 Slides.defaultProps = {
-  appId: "myApp"
+  config: { appId: "myApp", showButtonNavigation: false }
 };
 
 Slides.propTypes = {
-  appId: function(props, propName, componentName) {
-    if (!/^[a-zA-z]{1,12}$/.test(props[propName])) {
-      return new Error(
-        "If you provide the optional appId prop, please use letters only, max 12 characters."
-      );
-    }
-  },
+  config: PropTypes.exact({
+    appId: function(props, propName, componentName) {
+      if (!/^[a-zA-z]{1,12}$/.test(props[propName])) {
+        return new Error(
+          "If you provide the optional appId prop, please use letters only, max 12 characters."
+        );
+      }
+    },
+    showButtonNavigation: PropTypes.bool
+  }),
   children: PropTypes.array.isRequired
 };
 

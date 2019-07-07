@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Navigation({ goToPrev, goToNext }) {
+export default function ButtonNavigation({ goToPrev, goToNext }) {
   return (
     <div>
       <button onClick={goToPrev}>prev</button>
