@@ -10,8 +10,6 @@ function Slides({ config, children: slides }) {
   const localStorageKey = config.appId + "-currentSlideIndex";
   const [CurrentSlide, goToPrev, goToNext] = useSlides(slides, localStorageKey);
 
-  console.log(localStorageKey);
-
   return (
     <>
       <KeyboardNavigation goToPrev={goToPrev} goToNext={goToNext} />
