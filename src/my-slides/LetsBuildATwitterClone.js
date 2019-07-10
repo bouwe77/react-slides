@@ -3,7 +3,9 @@ import MarkdownSlide from "./MarkdownSlide";
 
 export default () => {
   const markdown = `
-# &lt; Welcome /&gt;
-  `;
+# LET'S BUILD...
+
+a <a href="https://nitwit.netlify.com" target="_blank">twitter clone</a> :)
+    `;
   return <MarkdownSlide markdown={markdown} />;
 };

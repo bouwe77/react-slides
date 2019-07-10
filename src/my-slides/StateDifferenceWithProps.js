@@ -3,7 +3,12 @@ import MarkdownSlide from "./MarkdownSlide";
 
 export default () => {
   const markdown = `
-# &lt; Welcome /&gt;
-  `;
+# STATE & PROPS
+
+- State is data **within** a component
+
+
+- Props is data **between** components
+    `;
   return <MarkdownSlide markdown={markdown} />;
 };

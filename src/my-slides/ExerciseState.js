@@ -3,7 +3,11 @@ import MarkdownSlide from "./MarkdownSlide";
 
 export default () => {
   const markdown = `
-# &lt; Welcome /&gt;
-  `;
+# EXERCISE 3
+
+Add state to a component:
+
+https://bouwe.io/workshops/3
+    `;
   return <MarkdownSlide markdown={markdown} />;
 };

@@ -3,7 +3,13 @@ import MarkdownSlide from "./MarkdownSlide";
 
 export default () => {
   const markdown = `
-# &lt; Welcome /&gt;
-  `;
+# HURRAY!!!
+
+<MyConfetti />
+
+Our timeline functionality is DONE!
+
+However, it’s all local state… :(
+    `;
   return <MarkdownSlide markdown={markdown} />;
 };

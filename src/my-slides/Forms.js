@@ -3,7 +3,12 @@ import MarkdownSlide from "./MarkdownSlide";
 
 export default () => {
   const markdown = `
-# &lt; Welcome /&gt;
-  `;
+# FORMS
+
+- Uncontrolled inputs: DOM
+
+
+- Controlled inputs: state
+    `;
   return <MarkdownSlide markdown={markdown} />;
 };

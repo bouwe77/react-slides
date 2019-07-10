@@ -3,7 +3,11 @@ import MarkdownSlide from "./MarkdownSlide";
 
 export default () => {
   const markdown = `
-# &lt; Welcome /&gt;
-  `;
+# Workshop Advanced React Patterns
+
+Q4 2019
+
+**_Context, reducers, testing etc._**
+      `;
   return <MarkdownSlide markdown={markdown} />;
 };

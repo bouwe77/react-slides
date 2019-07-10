@@ -3,7 +3,9 @@ import MarkdownSlide from "./MarkdownSlide";
 
 export default () => {
   const markdown = `
-# &lt; Welcome /&gt;
-  `;
+# COMPONENTS
+
+Reusability and Single Responsibility
+      `;
   return <MarkdownSlide markdown={markdown} />;
 };
