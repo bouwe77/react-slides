@@ -1,3 +1,9 @@
+// My code samples:
+import ExampleHelloWorld from "./ExampleHelloWorld";
+import ExampleProps from "../my-code-examples/[02] Props/Props";
+import ExamplePropsArrayMap from "../my-code-examples/[02] Props/PropsArrayMap";
+
+// My slides:
 import AdvancedWorkshop from "./AdvancedWorkshop";
 import AndYou from "./AndYou";
 import ApisAndState from "./ApisAndState";
@@ -45,9 +51,12 @@ export default [
   ComponentsParentChild,
   ComponentIsJustJsFunction,
   ComponentReturnsJsx,
+  ExampleHelloWorld,
   ComponentsCodeExampleSummary,
   ExerciseComponents,
   PropsPassDataParentChild,
+  ExampleProps,
+  ExamplePropsArrayMap,
   ExerciseProps,
   DrawComponentLifecycle,
   StateDifferenceWithProps,
