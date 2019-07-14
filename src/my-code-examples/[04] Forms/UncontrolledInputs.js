@@ -1,1 +1,48 @@
-export default () => null;
+import React, { useState } from "react";
+
+export default function App() {
+  const [todos, setTodos] = useState([]);
+
+  function addToDo(description) {
+    setTodos([...todos, { description }]);
+  }
+
+  return (
+    <div>
+      <Form addToDo={addToDo} />
+      <ToDoList todos={todos} />
+    </div>
+  );
+}
+
+function Form(props) {
+  let descField = React.createRef();
+
+  function submitForm(event) {
+    // Prevent that a submit reloads the page.
+    event.preventDefault();
+
+    // Read the entered description from the textbox
+    const description = descField.current.value;
+
+    // Call the addToDo callback function from props and supply the entered description.
+    props.addToDo(description);
+
+    // Clear the textbox.
+    descField.current.value = "";
+  }
+
+  return (
+    <form onSubmit={submitForm}>
+      <input type="text" ref={descField} /> <button type="submit">Add</button>
+    </form>
+  );
+}
+
+const ToDoList = ({ todos }) => (
+  <ul>
+    {todos.map((todo, index) => (
+      <li key={index}>{todo.description}</li>
+    ))}
+  </ul>
+);

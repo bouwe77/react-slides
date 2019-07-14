@@ -4,6 +4,8 @@ import ExampleProps from "./ExampleProps";
 import ExamplePropsArrayMap from "./ExamplePropsArrayMap";
 import ExampleStateCounter from "./ExampleStateCounter";
 import ExampleStateArrayOfObjects from "./ExampleStateArrayOfObjects";
+import ExampleUncontrolledInputs from "./ExampleUncontrolledInputs";
+import ExampleControlledInputs from "./ExampleControlledInputs";
 
 // My slides:
 import AdvancedWorkshop from "./AdvancedWorkshop";
@@ -67,6 +69,8 @@ export default [
   StateSummary,
   ExerciseState,
   Forms,
+  ExampleUncontrolledInputs,
+  ExampleControlledInputs,
   ExerciseForms,
   WorkshopFinished,
   ApisAndState,
