@@ -1,5 +1,5 @@
 import React from "react";
-import MarkdownSlide from "./MarkdownSlide";
+import MarkdownSlide from "../slide-wrappers/MarkdownSlide";
 
 export default () => {
   const markdown = `

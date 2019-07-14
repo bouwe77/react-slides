@@ -1,9 +1,9 @@
 import React from "react";
-import ExampleWrapper from "./ExampleWrapper";
+import ExampleSlide from "../slide-wrappers/ExampleSlide";
 import PropsArrayMap from "../my-code-examples/[02] Props/PropsArrayMap";
 
 export default () => (
-  <ExampleWrapper>
+  <ExampleSlide>
     <PropsArrayMap />
-  </ExampleWrapper>
+  </ExampleSlide>
 );

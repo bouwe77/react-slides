@@ -1,9 +1,9 @@
 import React from "react";
-import ExampleWrapper from "./ExampleWrapper";
+import ExampleSlide from "../slide-wrappers/ExampleSlide";
 import HelloWorld from "../my-code-examples/[01] Components/HelloWorld";
 
 export default () => (
-  <ExampleWrapper>
+  <ExampleSlide>
     <HelloWorld />
-  </ExampleWrapper>
+  </ExampleSlide>
 );

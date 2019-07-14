@@ -6,6 +6,7 @@ import ExampleStateCounter from "./ExampleStateCounter";
 import ExampleStateArrayOfObjects from "./ExampleStateArrayOfObjects";
 import ExampleUncontrolledInputs from "./ExampleUncontrolledInputs";
 import ExampleControlledInputs from "./ExampleControlledInputs";
+import ExampleApiCalls from "./ExampleApiCalls";
 
 // My slides:
 import AdvancedWorkshop from "./AdvancedWorkshop";
@@ -74,6 +75,7 @@ export default [
   ExerciseForms,
   WorkshopFinished,
   ApisAndState,
+  ExampleApiCalls,
   NitwitApi,
   ExerciseRestApi,
   TimelineFunctionalityDone,

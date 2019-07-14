@@ -1,9 +1,9 @@
 import React from "react";
 import ExampleSlide from "../slide-wrappers/ExampleSlide";
-import StateArrayOfObjects from "../my-code-examples/[03] State/ArrayOfObjects";
+import ApiCalls from "../my-code-examples/[05] Apis/ApiCalls";
 
 export default () => (
   <ExampleSlide>
-    <StateArrayOfObjects />
+    <ApiCalls />
   </ExampleSlide>
 );

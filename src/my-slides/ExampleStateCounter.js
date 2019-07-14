@@ -1,9 +1,9 @@
 import React from "react";
-import ExampleWrapper from "./ExampleWrapper";
+import ExampleSlide from "../slide-wrappers/ExampleSlide";
 import State from "../my-code-examples/[03] State/Counter";
 
 export default () => (
-  <ExampleWrapper>
+  <ExampleSlide>
     <State />
-  </ExampleWrapper>
+  </ExampleSlide>
 );
