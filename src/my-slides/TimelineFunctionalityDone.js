@@ -1,15 +1,18 @@
 import React from "react";
 import MarkdownSlide from "../slide-wrappers/MarkdownSlide";
+import ConfettiSlide from "../slide-wrappers/ConfettiSlide";
 
 export default () => {
   const markdown = `
 # HURRAY!!!
 
-<MyConfetti />
-
 Our timeline functionality is DONE!
 
 However, it’s all local state… :(
     `;
-  return <MarkdownSlide markdown={markdown} />;
+  return (
+    <ConfettiSlide>
+      <MarkdownSlide markdown={markdown} />
+    </ConfettiSlide>
+  );
 };

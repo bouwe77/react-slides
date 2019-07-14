@@ -9,10 +9,13 @@
     "@emotion/styled": "10.0.14",
     "prop-types": "15.7.2",
     "react": "16.8.6",
+    "react-confetti": "3.1.2",
     "react-dom": "16.8.6",
     "react-keyboard-event-handler": "1.5.1",
     "react-markdown": "4.1.0",
     "react-scripts": "3.0.1",
+    "react-use": "9.11.0",
+    "rebound": "0.1.0",
     "use-persisted-state": "0.3.0",
     "uuid": "3.3.2"
   },
