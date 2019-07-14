@@ -1,7 +1,9 @@
 // My code samples:
 import ExampleHelloWorld from "./ExampleHelloWorld";
-import ExampleProps from "../my-code-examples/[02] Props/Props";
-import ExamplePropsArrayMap from "../my-code-examples/[02] Props/PropsArrayMap";
+import ExampleProps from "./ExampleProps";
+import ExamplePropsArrayMap from "./ExamplePropsArrayMap";
+import ExampleStateCounter from "./ExampleStateCounter";
+import ExampleStateArrayOfObjects from "./ExampleStateArrayOfObjects";
 
 // My slides:
 import AdvancedWorkshop from "./AdvancedWorkshop";
@@ -60,6 +62,8 @@ export default [
   ExerciseProps,
   DrawComponentLifecycle,
   StateDifferenceWithProps,
+  ExampleStateCounter,
+  ExampleStateArrayOfObjects,
   StateSummary,
   ExerciseState,
   Forms,

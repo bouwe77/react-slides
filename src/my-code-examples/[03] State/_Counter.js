@@ -8,11 +8,10 @@ function App() {
   }
 
   return (
-    <div>
-      <h1>Example 4: useState hook</h1>
+    <>
       <h3>{counter}</h3>
       <button onClick={incrementCounter}>+</button>
-    </div>
+    </>
   );
 }
 
