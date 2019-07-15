@@ -7,6 +7,8 @@ import ExampleStateArrayOfObjects from "./ExampleStateArrayOfObjects";
 import ExampleUncontrolledInputs from "./ExampleUncontrolledInputs";
 import ExampleControlledInputs from "./ExampleControlledInputs";
 import ExampleApiCalls from "./ExampleApiCalls";
+import ExamplePropsChildren from "./ExamplePropsChildren";
+import ExampleStyledComponents from "./ExampleStyledComponents";
 
 // My slides:
 import AdvancedWorkshop from "./AdvancedWorkshop";
@@ -41,6 +43,8 @@ import Welcome from "./Welcome";
 import WhatIsReact from "./WhatIsReact";
 import WhatsNext from "./WhatsNext";
 import WorkshopFinished from "./WorkshopFinished";
+import PropsChildren from "./PropsChildren";
+import CssStyling from "./CssStyling";
 
 export default [
   Welcome,
@@ -63,6 +67,10 @@ export default [
   ExampleProps,
   ExamplePropsArrayMap,
   ExerciseProps,
+  PropsChildren,
+  ExamplePropsChildren,
+  CssStyling,
+  ExampleStyledComponents,
   DrawComponentLifecycle,
   StateDifferenceWithProps,
   ExampleStateCounter,
