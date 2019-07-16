@@ -11,6 +11,8 @@ const App = () => {
 };
 
 function Panel(props) {
+  console.log(props.children);
+
   return <div className="panel">{props.children}</div>;
 }
 

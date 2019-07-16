@@ -1,6 +1,6 @@
 import React from "react";
 import ExampleSlide from "../slide-wrappers/ExampleSlide";
-import UncontrolledInputs from "../my-code-examples/[04] Forms/UncontrolledInputs";
+import UncontrolledInputs from "../my-code-examples/[05] Forms/UncontrolledInputs";
 
 export default () => (
   <ExampleSlide>
