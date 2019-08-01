@@ -1,8 +1,5 @@
 import React from "react";
 
-// The purpose of this example is:
-// * How to use the useState hook to do make a component stateful.
-
 function App() {
   const counter = 42;
 
@@ -14,3 +11,6 @@ function App() {
 }
 
 export default App;
+
+// What we'll learn in this example:
+// * How to use the useState hook to do make a component stateful.

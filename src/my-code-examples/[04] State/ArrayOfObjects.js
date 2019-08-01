@@ -1,10 +1,6 @@
 import React, { useState } from "react";
 import getRandomPhoto from "./randomPhotos";
 
-// The purpose of this example is:
-// * How to add an array of objects to state.
-// * How to update that array of objects.
-
 function App() {
   function addPhoto() {
     const newPhoto = getRandomPhoto();
@@ -25,3 +21,7 @@ function Photo() {
 }
 
 export default App;
+
+// What we'll learn in this example:
+// * How to add an array of objects to state.
+// * How to update that array of objects.

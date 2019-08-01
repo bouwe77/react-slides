@@ -1,9 +1,5 @@
 import React from "react";
 
-// The purpose of this example is:
-// * Pass an array of objects as props.
-// * Using array.map to create an array of React elements to render.
-
 function App() {
   return <Greetings />;
 }
@@ -17,3 +13,7 @@ function Greeting() {
 }
 
 export default App;
+
+// What we'll learn in this example:
+// * Pass an array of objects as props.
+// * Using array.map to create an array of React elements to render.
