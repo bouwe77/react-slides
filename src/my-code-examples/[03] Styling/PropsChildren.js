@@ -5,15 +5,14 @@ import "./styles.css";
 const App = () => {
   return (
     <>
-      <Panel>This is a very nice box</Panel>
+      <Box />
     </>
   );
 };
 
-function Panel(props) {
+function Box(props) {
   //console.log(props.children);
-
-  return <div className="panel">{props.children}</div>;
+  return <div className="box">{props.children}</div>;
 }
 
 export default App;
