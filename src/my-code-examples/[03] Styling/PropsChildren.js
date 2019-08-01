@@ -5,13 +5,13 @@ import "./styles.css";
 const App = () => {
   return (
     <>
-      <Panel>Hello World</Panel>
+      <Panel>This is a very nice box</Panel>
     </>
   );
 };
 
 function Panel(props) {
-  console.log(props.children);
+  //console.log(props.children);
 
   return <div className="panel">{props.children}</div>;
 }
