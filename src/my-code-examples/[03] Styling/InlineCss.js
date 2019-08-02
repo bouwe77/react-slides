@@ -1,7 +1,7 @@
 import React from "react";
 
 function App() {
-  return <>Styled Components</>;
+  return <>Inline CSS</>;
 }
 
 export default App;

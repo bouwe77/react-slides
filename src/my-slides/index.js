@@ -8,7 +8,9 @@ import ExampleUncontrolledInputs from "./ExampleUncontrolledInputs";
 import ExampleControlledInputs from "./ExampleControlledInputs";
 import ExampleApiCalls from "./ExampleApiCalls";
 import ExamplePropsChildren from "./ExamplePropsChildren";
-import ExampleStyledComponents from "./ExampleStyledComponents";
+import ExampleInlineCss from "./ExampleInlineCss";
+import ExampleCssModules from "./ExampleCssModules";
+import ExampleCssInJs from "./ExampleCssInJs.js";
 
 // My slides:
 import AdvancedWorkshop from "./AdvancedWorkshop";
@@ -70,7 +72,9 @@ export default [
   PropsChildren,
   ExamplePropsChildren,
   CssStyling,
-  ExampleStyledComponents,
+  ExampleInlineCss,
+  ExampleCssModules,
+  ExampleCssInJs,
   DrawComponentLifecycle,
   StateDifferenceWithProps,
   ExampleStateCounter,

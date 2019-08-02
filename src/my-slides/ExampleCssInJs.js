@@ -1,9 +1,9 @@
 import React from "react";
 import ExampleSlide from "../slide-wrappers/ExampleSlide";
-import StyledComponents from "../my-code-examples/[03] Styling/StyledComponents";
+import CssInJs from "../my-code-examples/[03] Styling/CssInJs";
 
 export default () => (
   <ExampleSlide>
-    <StyledComponents />
+    <CssInJs />
   </ExampleSlide>
 );
