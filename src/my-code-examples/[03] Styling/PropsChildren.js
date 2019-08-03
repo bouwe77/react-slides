@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./styles.css";
+import "./styles.css"; // Just use a plain CSS file.
 
 const App = () => {
   return (
@@ -17,5 +17,8 @@ function Box(props) {
 
 export default App;
 
-// Photo:
-// <img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/vestrahorn-iceland-francesco-riccardo-iacomino.jpg" width="300" height="200" alt=""/>
+// What we'll learn in this example:
+// * How to use the built-in children prop.
+// * How to apply plain CSS styles.
+
+// Photo: <img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/vestrahorn-iceland-francesco-riccardo-iacomino.jpg" width="300" height="200" alt=""/>

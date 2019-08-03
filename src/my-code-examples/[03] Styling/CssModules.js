@@ -1,21 +1,20 @@
 import React from "react";
-import styles from "./styles.css"; // Tell Webpack to use these styles
+import styles from "./CssModules.module.css"; // Tell Webpack to use these styles as a module
 
 function App() {
   return (
     <>
-      <Box1 />
-      <Box2 />
+      <Box>CSS Modules</Box>
     </>
   );
 }
 
-function Box1() {
-  return <div className="box">This is Box 1</div>;
-}
-
-function Box2() {
-  return <div className={styles.box}>This is Box 2</div>;
+function Box({ children }) {
+  return <div className={styles.box}>{children}</div>;
 }
 
 export default App;
+
+// What we'll learn in this example:
+// * How to import a CSS file as a module using Webpack. Note the file naming convention with "module" in it!
+// * That Webpack makes sure styles are local (unique).

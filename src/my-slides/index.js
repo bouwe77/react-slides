@@ -47,6 +47,7 @@ import WhatsNext from "./WhatsNext";
 import WorkshopFinished from "./WorkshopFinished";
 import PropsChildren from "./PropsChildren";
 import CssStyling from "./CssStyling";
+import CssStylingCompared from "./CssStylingCompared";
 
 export default [
   Welcome,
@@ -75,6 +76,7 @@ export default [
   ExampleInlineCss,
   ExampleCssModules,
   ExampleCssInJs,
+  CssStylingCompared,
   DrawComponentLifecycle,
   StateDifferenceWithProps,
   ExampleStateCounter,
