@@ -2,7 +2,7 @@ import React from "react";
 
 export default ({ children }) => (
   <>
-    <p>CODE EXAMPLE</p>
+    <h1>CODE EXAMPLE</h1>
     {children}
   </>
 );
