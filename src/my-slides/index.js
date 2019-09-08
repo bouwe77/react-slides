@@ -11,6 +11,7 @@ import ExamplePropsChildren from "./ExamplePropsChildren";
 import ExampleInlineCss from "./ExampleInlineCss";
 import ExampleCssModules from "./ExampleCssModules";
 import ExampleCssInJs from "./ExampleCssInJs.js";
+import ExampleStateTime from "./ExampleStateTime.js";
 
 // My slides:
 import AdvancedWorkshop from "./AdvancedWorkshop";
@@ -24,7 +25,7 @@ import ComponentsReuseSingleResponsibility from "./ComponentsReuseSingleResponsi
 import ComponentsUiBuildingBlocks from "./ComponentsUiBuildingBlocks";
 import ComponentsWebsiteExample from "./ComponentsWebsiteExample";
 import DrawComponentLifecycle from "./DrawComponentLifecycle";
-import ExerciseBonus from "./ExerciseBonus";
+import ExerciseFollowUnfollow from "./ExerciseFollowUnfollow";
 import ExerciseComponents from "./ExerciseComponents";
 import ExerciseForms from "./ExerciseForms";
 import ExerciseProps from "./ExerciseProps";
@@ -44,10 +45,10 @@ import ToDoToday from "./ToDoToday";
 import Welcome from "./Welcome";
 import WhatIsReact from "./WhatIsReact";
 import WhatsNext from "./WhatsNext";
-import WorkshopFinished from "./WorkshopFinished";
 import PropsChildren from "./PropsChildren";
 import CssStyling from "./CssStyling";
 import CssStylingCompared from "./CssStylingCompared";
+import DiverseMeuk from "./DiverseMeuk";
 
 export default [
   Welcome,
@@ -92,8 +93,9 @@ export default [
   ExampleApiCalls,
   NitwitApi,
   ExerciseRestApi,
-  WorkshopFinished,
-  ExerciseBonus,
+  DiverseMeuk,
+  ExampleStateTime,
+  ExerciseFollowUnfollow,
   WhatsNext,
   AdvancedWorkshop,
   Thanks

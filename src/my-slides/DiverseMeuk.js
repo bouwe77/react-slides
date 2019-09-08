@@ -3,11 +3,13 @@ import MarkdownSlide from "../slide-wrappers/MarkdownSlide";
 
 export default () => {
   const markdown = `
-# BONUS EXERCISE
+# Diverse meuk
 
-Users can follow or unfollow each other
+Nu hebben we alles geleerd.
 
-https://bouwe.io/workshops/3
-      `;
+Ik wil eigenlijk nog wat (advanced) voorbeelden laten zien.
+
+Dit zijn variaties op hetgeen we geleerd hebben.
+  `;
   return <MarkdownSlide markdown={markdown} />;
 };
