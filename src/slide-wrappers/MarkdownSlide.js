@@ -3,9 +3,9 @@ const ReactMarkdown = require("react-markdown");
 
 function MarkDownSlide({ markdown }) {
   return (
-    <p className="">
+    <div className="content">
       <ReactMarkdown source={markdown} />
-    </p>
+    </div>
   );
 }
 
