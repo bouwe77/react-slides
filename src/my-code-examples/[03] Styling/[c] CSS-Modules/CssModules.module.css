@@ -3,11 +3,13 @@
   width: 400px;
   padding: 20px;
   margin: 10px;
-  background: #73ad21;
+  background: Red;
   color: white;
 }
 
 .mytext {
   font-family: "Courier New", Courier, monospace;
   color: White;
+  font-style: italic;
+  font-variant-caps: all-petite-caps;
 }

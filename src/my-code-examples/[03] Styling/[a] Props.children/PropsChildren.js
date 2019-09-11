@@ -1,13 +1,9 @@
 import React from "react";
 
-import "./styles.css"; // Just use a plain CSS file.
+import "../styles.css"; // Just use a plain CSS file.
 
 const App = () => {
-  return (
-    <>
-      <Box />
-    </>
-  );
+  return <Box>Hello World</Box>;
 };
 
 function Box(props) {
