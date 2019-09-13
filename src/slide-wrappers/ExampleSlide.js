@@ -2,7 +2,9 @@ import React from "react";
 
 export default ({ children }) => (
   <>
-    <h1>CODE EXAMPLE</h1>
-    <span className="content">{children}</span>
+    <span className="content">
+      <h1>CODE EXAMPLE</h1>
+      {children}
+    </span>
   </>
 );

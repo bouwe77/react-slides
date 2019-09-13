@@ -10,6 +10,7 @@ import "./styles.css";
 const App = () => (
   <div className="app">
     <Slides>{slides}</Slides>
+
     <footer>
       <span>@bouwe</span>
       <span>https://bouwe.io</span>

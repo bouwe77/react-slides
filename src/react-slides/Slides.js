@@ -1,7 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import FullScreen from "./FullScreen";
 import useSlides from "./useSlides";
 import ButtonNavigation from "./ButtonNavigation";
 import KeyboardNavigation from "./KeyboardNavigation";
@@ -16,9 +15,7 @@ function Slides({ config, children: slides }) {
       {config.showButtonNavigation ? (
         <ButtonNavigation goToPrev={goToPrev} goToNext={goToNext} />
       ) : null}
-      <FullScreen>
-        <CurrentSlide />
-      </FullScreen>
+      <CurrentSlide />
     </>
   );
 }
