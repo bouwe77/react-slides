@@ -1,16 +1,32 @@
 body {
   background-color: #1c2125;
   font-family: "Raleway", sans-serif;
+  margin: 20px;
+  width: 500px;
+  color: #0c1e29;
+}
+
+.app {
+  height: calc(100vh - 40px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+footer {
+  color: steelblue;
+}
+
+footer span {
+  margin-right: 50px;
 }
 
 h1 {
   color: White;
-  font-size: 8vw;
-  text-align: center;
+  font-size: 6vw;
 }
 
 .content {
-  font-size: 4vw;
+  font-size: 3vw;
   color: White;
-  text-align: center;
 }

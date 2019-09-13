@@ -7,5 +7,16 @@ import "./styles.css";
 
 //const config = { appId: "appy", showButtonNavigation: true };
 
+const App = () => (
+  <div className="app">
+    <div />
+    <Slides>{slides}</Slides>
+    <footer>
+      <span>@bouwe</span>
+      <span>https://bouwe.io</span>
+    </footer>
+  </div>
+);
+
 const rootElement = document.getElementById("root");
-ReactDOM.render(<Slides>{slides}</Slides>, rootElement);
+ReactDOM.render(<App />, rootElement);
