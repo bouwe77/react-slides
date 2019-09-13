@@ -5,9 +5,7 @@ export default () => {
   const markdown = `
 # COMPONENTS
 
-A component is just 
-
-a **javascript function**
+A component is just a **javascript function**
       `;
   return <MarkdownSlide markdown={markdown} />;
 };

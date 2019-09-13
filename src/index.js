@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
+import Footer from "./Footer";
 import Slides from "./react-slides";
 import slides from "./my-slides";
 import "./styles.css";
@@ -10,11 +11,7 @@ import "./styles.css";
 const App = () => (
   <div className="app">
     <Slides>{slides}</Slides>
-
-    <footer>
-      <span>@bouwe</span>
-      <span>https://bouwe.io</span>
-    </footer>
+    <Footer />
   </div>
 );
 
