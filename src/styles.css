@@ -13,6 +13,13 @@ body {
   justify-content: space-between;
 }
 
+strong {
+  color: White;
+  text-shadow: 1px 0 White;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
 a {
   color: steelblue;
 }
