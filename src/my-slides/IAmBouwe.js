@@ -7,9 +7,9 @@ I am **Bouwe**
 
 Software Engineer @ New Nexus
 
-[bouwe.io]
+[@bouwe]
 
-[bouwe.io]: https://bouwe.io
+[@bouwe]: https://twitter.com/bouwe
   `;
   return <MarkdownSlide markdown={markdown} />;
 };
