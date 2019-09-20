@@ -7,7 +7,7 @@ export default () => {
 
 Users can follow or unfollow each other
 
-https://bouwe.io/workshops/3
+https://bouwe.io/workshops/4
       `;
   return <MarkdownSlide markdown={markdown} />;
 };

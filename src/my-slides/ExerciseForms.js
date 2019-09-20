@@ -7,7 +7,7 @@ export default () => {
 
 Add a component with a form
 
-https://bouwe.io/workshops/3
+https://bouwe.io/workshops/4
     `;
   return <MarkdownSlide markdown={markdown} />;
 };

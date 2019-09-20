@@ -7,7 +7,7 @@ export default () => {
 
 Calling a REST API
 
-https://bouwe.io/workshops/3
+https://bouwe.io/workshops/4
     `;
   return <MarkdownSlide markdown={markdown} />;
 };

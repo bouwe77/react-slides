@@ -7,7 +7,7 @@ export default () => {
 
 Pass props between components
 
-https://bouwe.io/workshops/3
+https://bouwe.io/workshops/4
     `;
   return <MarkdownSlide markdown={markdown} />;
 };

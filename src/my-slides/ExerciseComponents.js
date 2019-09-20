@@ -5,11 +5,9 @@ export default () => {
   const markdown = `
 # EXERCISE 1
 
-Create your first components
+Create your first components for the twitter clone
 
-for the twitter clone
-
-https://bouwe.io/workshops/3
+https://bouwe.io/workshops/4
     `;
   return <MarkdownSlide markdown={markdown} />;
 };

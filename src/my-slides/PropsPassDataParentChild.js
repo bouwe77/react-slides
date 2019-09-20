@@ -5,9 +5,7 @@ export default () => {
   const markdown = `
 # PROPS
 
-Passing data between components 
-
-from **parent to child**
+Passing data between components from **parent to child**
     `;
   return <MarkdownSlide markdown={markdown} />;
 };
