@@ -1,9 +1,9 @@
 import React from "react";
 import ExampleSlide from "../slide-wrappers/ExampleSlide";
-import UncontrolledInputs from "../my-code-examples/[05] Forms/UncontrolledInputs";
+import ContactForm from "../my-code-examples/[05] Forms/ContactForm";
 
 export default () => (
   <ExampleSlide>
-    <UncontrolledInputs />
+    <ContactForm />
   </ExampleSlide>
 );

@@ -4,8 +4,7 @@ import ExampleProps from "./ExampleProps";
 import ExamplePropsArrayMap from "./ExamplePropsArrayMap";
 import ExampleStateCounter from "./ExampleStateCounter";
 import ExampleStateArrayOfObjects from "./ExampleStateArrayOfObjects";
-import ExampleUncontrolledInputs from "./ExampleUncontrolledInputs";
-import ExampleControlledInputs from "./ExampleControlledInputs";
+import ExampleContactForm from "./ExampleContactForm";
 import ExampleApiCalls from "./ExampleApiCalls";
 import ExamplePropsChildren from "./ExamplePropsChildren";
 import ExampleInlineCss from "./ExampleInlineCss";
@@ -87,8 +86,7 @@ export default [
   StateSummary,
   ExerciseState,
   Forms,
-  ExampleUncontrolledInputs,
-  ExampleControlledInputs,
+  ExampleContactForm,
   ExerciseForms,
   TimelineFunctionalityDone,
   ApisAndState,
