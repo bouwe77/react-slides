@@ -24,6 +24,7 @@ import ComponentsParentChild from "./ComponentsParentChild";
 import ComponentsReuseSingleResponsibility from "./ComponentsReuseSingleResponsibility";
 import ComponentsUiBuildingBlocks from "./ComponentsUiBuildingBlocks";
 import ComponentsWebsiteExample from "./ComponentsWebsiteExample";
+import ComponentsSeparationOfConcern from "./ComponentsSeparationOfConcern";
 import DrawComponentLifecycle from "./DrawComponentLifecycle";
 import ExerciseFollowUnfollow from "./ExerciseFollowUnfollow";
 import ExerciseComponents from "./ExerciseComponents";
@@ -64,6 +65,7 @@ export default [
   ComponentsParentChild,
   ComponentIsJustJsFunction,
   ComponentReturnsJsx,
+  ComponentsSeparationOfConcern,
   ExampleHelloWorld,
   ComponentsCodeExampleSummary,
   ExerciseComponents,

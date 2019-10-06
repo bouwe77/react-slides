@@ -5,7 +5,9 @@ export default () => {
   const markdown = `
 # COMPONENTS
 
-Single Responsibility and Reusability
-      `;
+Separation of concern on the **component** level,
+
+not on the **technology** level 
+`;
   return <MarkdownSlide markdown={markdown} />;
 };
