@@ -32,6 +32,7 @@ import ExerciseProps from "./ExerciseProps";
 import ExerciseRestApi from "./ExerciseRestApi";
 import ExerciseState from "./ExerciseState";
 import Forms from "./Forms";
+import FormsSummary from "./FormsSummary";
 import IAmBouwe from "./IAmBouwe";
 import LetsBuildATwitterClone from "./LetsBuildATwitterClone";
 import NitwitApi from "./NitwitApi";
@@ -86,6 +87,7 @@ export default [
   StateSummary,
   ExerciseState,
   Forms,
+  FormsSummary,
   ExampleContactForm,
   ExerciseForms,
   TimelineFunctionalityDone,
