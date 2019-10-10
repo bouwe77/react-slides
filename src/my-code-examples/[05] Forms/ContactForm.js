@@ -56,9 +56,6 @@ export default App;
 
 // =========== CONTROLLED ======================
 
-// const submitAllowed = nameValid === VALID && emailValid === VALID && messageValid === VALID;
-// console.log(nameValid, emailValid, messageValid, submitAllowed);
-
 // function handleChange(event) {
 //   switch (event.target.name) {
 //     case "name":
@@ -93,3 +90,6 @@ export default App;
 //       break;
 //   }
 // }
+
+// const submitAllowed = nameValid === VALID && emailValid === VALID && messageValid === VALID;
+// console.log(nameValid, emailValid, messageValid, submitAllowed);
